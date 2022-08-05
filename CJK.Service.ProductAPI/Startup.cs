@@ -13,6 +13,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using CJK.Service.ProductAPI.DbContexts;
 using Microsoft.EntityFrameworkCore;
+using AutoMapper;
 
 namespace CJK.Service.ProductAPI
 {
@@ -31,6 +32,10 @@ namespace CJK.Service.ProductAPI
 
             services.AddDbContext<ApplicationDbContext>(c =>
                 c.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
+
+            IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
+            services.AddSingleton(mapper);
+            services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
 
             services.AddControllers();
             services.AddSwaggerGen(c => {
