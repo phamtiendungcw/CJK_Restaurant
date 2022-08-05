@@ -1,7 +1,11 @@
+using AutoMapper;
+using CJK.Service.ProductAPI.DbContexts;
+using CJK.Service.ProductAPI.Repository;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
@@ -11,10 +15,6 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
-using CJK.Service.ProductAPI.DbContexts;
-using Microsoft.EntityFrameworkCore;
-using AutoMapper;
-using CJK.Service.ProductAPI.Repository;
 
 namespace CJK.Service.ProductAPI
 {
