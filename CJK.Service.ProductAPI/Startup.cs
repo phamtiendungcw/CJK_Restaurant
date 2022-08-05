@@ -14,6 +14,7 @@ using System.Threading.Tasks;
 using CJK.Service.ProductAPI.DbContexts;
 using Microsoft.EntityFrameworkCore;
 using AutoMapper;
+using CJK.Service.ProductAPI.Repository;
 
 namespace CJK.Service.ProductAPI
 {
@@ -36,7 +37,7 @@ namespace CJK.Service.ProductAPI
             IMapper mapper = MappingConfig.RegisterMaps().CreateMapper();
             services.AddSingleton(mapper);
             services.AddAutoMapper(AppDomain.CurrentDomain.GetAssemblies());
-
+            services.AddScoped<IProductRepository, ProductReponsitory>();
             services.AddControllers();
             services.AddSwaggerGen(c => {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "CJK.Service.ProductAPI", Version = "v1" });
