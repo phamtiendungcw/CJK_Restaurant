@@ -13,9 +13,9 @@ namespace CJK.Service.ProductAPI.Repository
     public class ProductReponsitory : IProductRepository
     {
         private readonly ApplicationDbContext _db;
-        private Mapper _mapper;
+        private IMapper _mapper;
 
-        public ProductReponsitory(ApplicationDbContext db, Mapper mapper)
+        public ProductReponsitory(ApplicationDbContext db, IMapper mapper)
         {
             _db = db;
             _mapper = mapper;
@@ -40,7 +40,7 @@ namespace CJK.Service.ProductAPI.Repository
         {
             try
             {
-                Product product = await _db.Products.FirstOrDefaultAsync(x => x.ProductId == productId);
+                Product product = await _db.Products.FirstOrDefaultAsync(u => u.ProductId == productId);
                 if (product == null)
                 {
                     return false;

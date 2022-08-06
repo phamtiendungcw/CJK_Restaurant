@@ -2,7 +2,7 @@
 
 namespace CJK.Service.ProductAPI.Model.Dto
 {
-    public class Response
+    public class ResponseDto
     {
         public bool IsSuccess { get; set; } = true;
         public  object Result { get; set; }
