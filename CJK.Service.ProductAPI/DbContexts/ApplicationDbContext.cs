@@ -23,7 +23,7 @@ namespace CJK.Service.ProductAPI.DbContexts
                 Name = "Samosa",
                 Price = 15,
                 Description = "Praesent scelerisque, mi sed ultrices condimentum, lacus ipsum viverra massa, in lobortis sapien eros in arcu. Quisque vel lacus ac magna vehicula sagittis ut non lacus.<br/>Sed volutpat tellus lorem, lacinia tincidunt tellus varius nec. Vestibulum arcu turpis, facilisis sed ligula ac, maximus malesuada neque. Phasellus commodo cursus pretium.",
-                ImageUrl = "https://appcjk.blob.core.windows.net/mango/11.jpg",
+                ImageUrl = "https://appcjk.blob.core.windows.net/cjk/11.jpg",
                 CategoryName = "Appetizer"
             });
             modelBuilder.Entity<Product>().HasData(new Product
@@ -32,7 +32,7 @@ namespace CJK.Service.ProductAPI.DbContexts
                 Name = "Paneer Tikka",
                 Price = 13.99,
                 Description = "Praesent scelerisque, mi sed ultrices condimentum, lacus ipsum viverra massa, in lobortis sapien eros in arcu. Quisque vel lacus ac magna vehicula sagittis ut non lacus.<br/>Sed volutpat tellus lorem, lacinia tincidunt tellus varius nec. Vestibulum arcu turpis, facilisis sed ligula ac, maximus malesuada neque. Phasellus commodo cursus pretium.",
-                ImageUrl = "https://appcjk.blob.core.windows.net/mango/12.jpg",
+                ImageUrl = "https://appcjk.blob.core.windows.net/cjk/12.jpg",
                 CategoryName = "Appetizer"
             });
             modelBuilder.Entity<Product>().HasData(new Product
@@ -41,7 +41,7 @@ namespace CJK.Service.ProductAPI.DbContexts
                 Name = "Sweet Pie",
                 Price = 10.99,
                 Description = "Praesent scelerisque, mi sed ultrices condimentum, lacus ipsum viverra massa, in lobortis sapien eros in arcu. Quisque vel lacus ac magna vehicula sagittis ut non lacus.<br/>Sed volutpat tellus lorem, lacinia tincidunt tellus varius nec. Vestibulum arcu turpis, facilisis sed ligula ac, maximus malesuada neque. Phasellus commodo cursus pretium.",
-                ImageUrl = "https://appcjk.blob.core.windows.net/mango/13.jpg",
+                ImageUrl = "https://appcjk.blob.core.windows.net/cjk/13.jpg",
                 CategoryName = "Dessert"
             });
             modelBuilder.Entity<Product>().HasData(new Product
@@ -50,7 +50,7 @@ namespace CJK.Service.ProductAPI.DbContexts
                 Name = "Pav Bhaji",
                 Price = 15,
                 Description = "Praesent scelerisque, mi sed ultrices condimentum, lacus ipsum viverra massa, in lobortis sapien eros in arcu. Quisque vel lacus ac magna vehicula sagittis ut non lacus.<br/>Sed volutpat tellus lorem, lacinia tincidunt tellus varius nec. Vestibulum arcu turpis, facilisis sed ligula ac, maximus malesuada neque. Phasellus commodo cursus pretium.",
-                ImageUrl = "https://appcjk.blob.core.windows.net/mango/14.jpg",
+                ImageUrl = "https://appcjk.blob.core.windows.net/cjk/14.jpg",
                 CategoryName = "Entree"
             });
         }

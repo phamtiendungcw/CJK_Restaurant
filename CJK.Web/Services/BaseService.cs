@@ -25,7 +25,7 @@ namespace CJK.Web.Services
         {
             try
             {
-                var client = httpClient.CreateClient("MangoAPI");
+                var client = httpClient.CreateClient("CJKAPI");
                 HttpRequestMessage message = new HttpRequestMessage();
                 message.Headers.Add("Accept", "application/json");
                 message.RequestUri = new Uri(apiRequest.Url);
