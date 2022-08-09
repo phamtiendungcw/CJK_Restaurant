@@ -2,9 +2,9 @@
 // See LICENSE in the project root for license information.
 
 
-using System;
 using Duende.IdentityServer.Models;
 using Microsoft.AspNetCore.Mvc;
+using System;
 
 namespace IdentityServerHost.Quickstart.UI
 {
@@ -24,7 +24,7 @@ namespace IdentityServerHost.Quickstart.UI
         {
             controller.HttpContext.Response.StatusCode = 200;
             controller.HttpContext.Response.Headers["Location"] = "";
-            
+
             return controller.View(viewName, new RedirectViewModel { RedirectUrl = redirectUri });
         }
     }
