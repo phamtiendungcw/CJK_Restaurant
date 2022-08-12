@@ -1,9 +1,9 @@
-﻿using System;
-using System.Security.Claims;
-using CJK.Services.Identity.DbContexts;
+﻿using CJK.Services.Identity.DbContexts;
 using CJK.Services.Identity.Models;
 using IdentityModel;
 using Microsoft.AspNetCore.Identity;
+using System;
+using System.Security.Claims;
 
 namespace CJK.Services.Identity.Initializer
 {
@@ -19,7 +19,6 @@ namespace CJK.Services.Identity.Initializer
             _userManager = userManager;
             _roleManager = roleManager;
         }
-
         public void Initialize()
         {
             if (_roleManager.FindByNameAsync(SD.Admin).Result == null)
